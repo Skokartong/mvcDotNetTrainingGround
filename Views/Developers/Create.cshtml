@@ -1,0 +1,25 @@
+@using webApiDotNetTrainingGround.Models
+@model CreateDeveloperRequest
+
+<h1>Add new developer</h1>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Role"></label>
+        <input asp-for="Role" />
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Experience"></label>
+        <input asp-for="Experience" type="number" />
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <button type="submit">Add Developer</button>
+</form>
+
+<a asp-action="Index">Back to List</a>

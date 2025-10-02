@@ -27,5 +27,10 @@ namespace mvcDotNetTrainingGround.Controllers
             }
             return View(developer);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
