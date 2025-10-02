@@ -15,7 +15,8 @@ namespace mvcDotNetTrainingGround.Controllers
 
         public IActionResult Index()
         {
-            return View(_db.Developers);
+            ViewData["Developers"] = _db.Developers;
+            return View();
         }
     }
 }
