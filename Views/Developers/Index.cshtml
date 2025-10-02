@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Role</th>
             <th>Experience</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
                     <td>@developer.Name</td>
                     <td>@developer.Role</td>
                     <td>@developer.Experience years</td>
+                    <td><a asp-action="Details" asp-route-id="@developer.Id">Details</a></td>
                 </tr>
             }
 
@@ -29,6 +31,7 @@
                     <td>@developer.Name</td>
                     <td>@developer.Role</td>
                     <td>@developer.Experience years</td>
+                    <td><a asp-action="Details" asp-route-id="@developer.Id">Details</a></td>
                 </tr>
             }
         }

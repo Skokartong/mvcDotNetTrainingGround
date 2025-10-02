@@ -17,5 +17,15 @@ namespace mvcDotNetTrainingGround.Controllers
         {
             return View(_db.Developers);
         }
+
+        public IActionResult Details(int id)
+        {
+            var developer = _db.Developers.FirstOrDefault(d => d.Id == id);
+            if (developer == null)
+            {
+                return NotFound();
+            }
+            return View(developer);
+        }
     }
 }
