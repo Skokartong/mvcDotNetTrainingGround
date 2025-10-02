@@ -95,3 +95,4 @@ C:\Users\Amanda\salt\precourse\mvcDotNetTrainingGround\obj\Debug\net9.0\refint\m
 C:\Users\Amanda\salt\precourse\mvcDotNetTrainingGround\obj\Debug\net9.0\mvcDotNetTrainingGround.pdb
 C:\Users\Amanda\salt\precourse\mvcDotNetTrainingGround\obj\Debug\net9.0\mvcDotNetTrainingGround.genruntimeconfig.cache
 C:\Users\Amanda\salt\precourse\mvcDotNetTrainingGround\obj\Debug\net9.0\ref\mvcDotNetTrainingGround.dll
+C:\Users\Amanda\salt\precourse\mvcDotNetTrainingGround\obj\Debug\net9.0\mvcDotNetTrainingGround.sourcelink.json

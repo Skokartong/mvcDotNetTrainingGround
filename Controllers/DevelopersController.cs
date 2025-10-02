@@ -12,5 +12,10 @@ namespace mvcDotNetTrainingGround.Controllers
         {
             _db = db;
         }
+
+        public IActionResult Index()
+        {
+            return View(_db.Developers);
+        }
     }
 }
