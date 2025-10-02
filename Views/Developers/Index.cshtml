@@ -1,6 +1,6 @@
 @model List<Developer>
 
-<h1>Developers thst</h1>
+<h1>Developers list</h1>
 
 <table style="width:100%">
     <thead>
@@ -13,11 +13,24 @@
     <tbody>
         @foreach (var developer in Model)
         {
-            <tr>
-                <th>@developer.Name</th>
-                <th>@developer.Role</th>
-                <th>@developer.Experience</th>
-            </tr>
+            // If id is even, highlight the row
+            if (developer.Id % 2 == 0)
+            {
+                <tr style="background-color: lightgray;">
+                    <td>@developer.Name</td>
+                    <td>@developer.Role</td>
+                    <td>@developer.Experience years</td>
+                </tr>
+            }
+
+            else
+            {
+                <tr>
+                    <td>@developer.Name</td>
+                    <td>@developer.Role</td>
+                    <td>@developer.Experience years</td>
+                </tr>
+            }
         }
     </tbody>
 </table>
