@@ -1,5 +1,12 @@
-@{
-    var developers = ViewData["Developers"] as List<Developer>;
-}
+@model List<Developer>
 
-<h1>Showing @developers.Count developers!</h1>
+<h1>Developers List</h1>
+
+<ul>
+    @foreach (var developer in Model)
+    {
+        <li>@developer.Name</li>
+        <li>@developer.Role</li>
+        <li>@developer.Experience</li>
+    }
+</ul>
